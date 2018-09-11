@@ -1,8 +1,13 @@
 console.log('app has started');
-import '../css/style.sass';
 import '../css/fonts.css';
-const $ = require('jquery');
+// const $ = require('jquery');
 const _ = require('underscore');
+// import $ from "jquery";
+import popper from 'popper.js';
+import bootstrap from 'bootstrap';
+import '../css/style.sass';
+import 'owl.carousel/dist/assets/owl.carousel.min.css';
+import 'owl.carousel';
 const Custumer = require('./about.js');
 const custumers = require('./custumers.js');
 
