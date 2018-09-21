@@ -9,13 +9,14 @@ module.exports = {
   entry: "./src/js/app.js",
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: "bundle.js"
+    filename: "bundle.js",
+    publicPath: '/',
   },
   module: {
     rules: [
       {
         test: /\.js$/,
-        include: path.resolve(__dirname, './js'),
+         // include: path.resolve(__dirname, './js'),
         // exclude: '/node_modules/',
         use: {
           loader: "babel-loader",
@@ -51,7 +52,8 @@ module.exports = {
   },
   devServer: {
     contentBase: './dist',
-    hot: true
+    hot: true,
+    publicPath: '/',
   },
   plugins: [ 
    new MiniCssExtractPlugin({

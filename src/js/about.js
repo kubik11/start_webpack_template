@@ -30,4 +30,36 @@ class Custumer{
 	}
 }
 
-module.exports = Custumer;
+class Search{
+	constructor(str, sought){
+		this.str = str;
+		this.sought = sought;
+	}
+	findPosition(){
+		if (typeof this.str !== 'string') {
+			throw new Error('Its not a string');
+		}
+		let lng = this.str.length;
+		let str = str.split(" ");
+		let toFind = ()=>{
+			// let arr = [];
+			// for (let i = 0; i < Math.round(lng/2 ); i++) {
+			// 	if( this.sought == str[i]){
+			// 		arr.push(i);
+			// 	}else{
+					
+			// 	}
+			// }
+			// return arr;
+			return str;
+		}
+		toFind();
+	}
+}
+
+
+module.exports = {
+	Custumer: Custumer,
+	Search: Search,
+	Rudy: 'hail'
+}

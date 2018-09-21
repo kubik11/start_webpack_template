@@ -9,19 +9,49 @@
 <body>
 	<header>
 		<div class="container">
-			<h2 class="capture">Furniture for every fucking bastrad</h2>
-			<nav>
-				<ul class="navigation">
-					<li><a href="#" id="1">Home</a></li>
-					<li><a href="#" id="2">Contacts</a></li>
-					<li><a href="#" id="3">Ours work</a></li>
-					<li><a href="#" id="4">Bullshit</a></li>
-				</ul>
-			</nav>
-			<input type="text" placeholder="fill the ID" value="" id="in">
-			<button id="push">Push</button>
+			<div class="header-inner">
+				<h2 class="capture">Furniture for every fucking bastrad</h2>
+				<nav>
+					<ul class="navigation">
+						<li><a href="#" id="1">Наша мебель</a></li>
+						<li><a href="#" id="2">Контакты</a></li>
+						<li><a href="#" id="3">Цены</a></li>
+						<li><a href="#" id="4">Расчитать проект</a></li>
+					</ul>
+				</nav>
+				<button class="hamburger hamburger--collapse is-active" type="button">
+					<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+					</span>
+				</button>
+			</div>
 		</div>
 	</header>
+		<section class="calculate-price disable">
+			<div class="calculate-price-overlay"></div>
+			<div class="container">
+				<form id="form-product" class="form-product">
+				<div class="form-group">
+					<label for="exampleInputEmail1">Email address</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Name</label>
+					<input type="text" class="form-control" id="exampleInputName1" placeholder="name">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Description</label>
+					<textarea name="description" id="description" cols="30" rows="10" class="form-control"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="exampleFormControlFile1">Example file input</label>
+					<input type="file" class="form-control-file" id="exampleFormControlFile1">
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+		</section>
 	<script src="bundle.js"></script>
 </body>
 </html>
